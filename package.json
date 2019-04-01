@@ -15,9 +15,9 @@
   "license": "MIT",
   "homepage": "https://github.com/dot-event/returns#readme",
   "devDependencies": {
-    "@dot-event/log": "1.0.33",
+    "@dot-event/log": "1.0.34",
     "@dot-event/type": "0.0.1",
-    "dot-event": "3.2.1",
+    "dot-event": "3.2.2",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-prettier": "3.0.1",
