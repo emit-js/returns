@@ -2,33 +2,33 @@
 /* eslint-env jest */
 
 test("returns", function() {
-  var dot = require("dot-event")()
+  var emit = require("@emit-js/emit")()
 
-  require("@dot-event/log")(dot)
-  require("@dot-event/type")(dot)
-  require("../")(dot)
+  require("@emit-js/log")(emit)
+  require("@emit-js/type")(emit)
+  require("../")(emit)
 
-  dot("returns", "test", { arg: "object" })
+  emit("returns", "test", "object")
 
-  dot.any("test", function() {
+  emit.any("test", function() {
     return true
   })
 
-  expect(dot.test()).toBe(true)
+  expect(emit.test()).toBe(true)
 })
 
 test("returns (async)", function() {
-  var dot = require("dot-event")()
+  var emit = require("@emit-js/emit")()
 
-  require("@dot-event/log")(dot)
-  require("@dot-event/type")(dot)
-  require("../")(dot)
+  require("@emit-js/log")(emit)
+  require("@emit-js/type")(emit)
+  require("../")(emit)
 
-  dot("returns", "test", { async: "object" })
+  emit("returns", "test", "object")
 
-  dot.any("test", function() {
+  emit.any("test", function() {
     return Promise.resolve(true)
   })
 
-  return dot.test()
+  return emit.test()
 })

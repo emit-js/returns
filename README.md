@@ -1,29 +1,31 @@
-# @dot-event/returns
+# @emit-js/returns
+
+[emit](https://github.com/emit-js/emit#readme) return value definitions
 
 ![returns](returns.gif)
 
 ## Install
 
 ```bash
-npm install @dot-event/returns @dot-event/log @dot-event/type
+npm install @emit-js/returns @emit-js/log @emit-js/type
 ```
 
 ## Setup
 
 ```js
-var dot = require("dot-event")()
+var emit = require("@emit-js/emit")()
 
-require("@dot-event/log")(dot)
-require("@dot-event/type")(dot)
-require("@dot-event/returns")(dot)
+require("@emit-js/log")(emit)
+require("@emit-js/type")(emit)
+require("@emit-js/returns")(emit)
 ```
 
 ## Usage
 
 ```js
-dot("returns", "test", { arg: "boolean" })
+emit("returns", "test", "boolean")
 
-dot.any("test", function() {
+emit.any("test", function() {
   return true
 })
 ```
