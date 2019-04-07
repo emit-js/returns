@@ -15,8 +15,8 @@
   "license": "MIT",
   "homepage": "https://github.com/emit-js/returns#readme",
   "devDependencies": {
-    "@emit-js/log": "1.0.39",
-    "@emit-js/type": "0.0.3",
+    "@emit-js/log": "1.0.40",
+    "@emit-js/type": "0.0.4",
     "@emit-js/emit": "3.2.9",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.1.0",
